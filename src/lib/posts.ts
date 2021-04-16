@@ -6,7 +6,7 @@ import remark2parse from "remark-parse";
 import remark2rehype from "remark-rehype";
 import remark2stringify from "remark-stringify";
 
-const POSTS_DIRECTORIES = path.join(process.cwd(), "posts");
+const POSTS_DIRECTORIES = path.join(process.cwd(), "content/");
 const ALL_POSTS = (() => {
     const fileNames = fs.readdirSync(POSTS_DIRECTORIES);
     return fileNames.map((fileName) => {
