@@ -1,5 +1,6 @@
 import { InferGetStaticPropsType, GetStaticProps } from "next";
 import Link from "next/link";
+import Head from "next/head";
 import { getSortedPostsData } from "@/lib/posts";
 
 import styles from "./index.module.css";
@@ -13,6 +14,11 @@ export const getStaticProps: GetStaticProps<{
 const Index = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => {
     return (
         <>
+            <Head>
+                <meta name="og:title" content={`Kindness web site`} />
+                <title>Kindness web site</title>
+            </Head>
+
             <h1 className={styles.heading}>Kindness</h1>
             <div>
                 {posts.map((post) => (

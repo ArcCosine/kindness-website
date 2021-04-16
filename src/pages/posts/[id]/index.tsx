@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from "next";
 import { getPostData, getAllPostIds, Post } from "@/lib/posts";
 
@@ -22,6 +23,10 @@ const PostPage = ({
 }: InferGetStaticPropsType<typeof getStaticProps>) => {
     return (
         <>
+            <Head>
+                <meta name="og:title" content={`${title} - Kindness web site`} />
+                <title>{title} - Kindness web site</title>
+            </Head>
             <h1>{title}</h1>
             <div dangerouslySetInnerHTML={{ __html: content }} />
         </>

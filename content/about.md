@@ -1,7 +1,7 @@
 ---
-id:'about' 
-title: About Me
-published:2021-04-16
+id: 'about'
+title: 'About Me'
+published: '2021-04-16'
 ---
 
 # About Me
