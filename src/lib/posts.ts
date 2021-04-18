@@ -2,9 +2,9 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import unified from "unified";
-import remark2parse from "remark-parse";
+import markdown from "remark-parse";
 import remark2rehype from "remark-rehype";
-import remark2stringify from "remark-stringify";
+import html from "rehype-stringify";
 
 const POSTS_DIRECTORIES = path.join(process.cwd(), "content/");
 const ALL_POSTS = (() => {
@@ -53,13 +53,13 @@ export function getAllPostIds() {
 export async function getPostData(id: string): Promise<Post> {
     const post = ALL_POSTS.find((post) => id === post.id) as Post;
 
-    const processdContent = await unified()
-        .use(remark2parse)
+    const processedContent  = await unified()
+        .use(markdown)
         .use(remark2rehype)
-        .use(remark2stringify)
+        .use(html)
         .process(post.content);
 
-    const content = processdContent.toString();
+    const content = processedContent.toString();
 
     return {
         ...post,
@@ -69,7 +69,7 @@ export async function getPostData(id: string): Promise<Post> {
 
 export function getSortedPostsData() {
     return ALL_POSTS.sort((a, b) => {
-        if (a.published < b.published) {
+        if (new Date(a.published).getTime() < new Date(b.published).getTime()) {
             return 1;
         } else {
             return -1;

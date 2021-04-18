@@ -4,6 +4,7 @@ import Head from "next/head";
 import { getSortedPostsData } from "@/lib/posts";
 
 import styles from "./index.module.css";
+import home from '../../styles/Home.module.css'
 
 export const getStaticProps: GetStaticProps<{
     posts: ReturnType<typeof getSortedPostsData>
@@ -20,9 +21,9 @@ const Index = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => {
             </Head>
 
             <h1 className={styles.heading}>Kindness</h1>
-            <div>
+            <div className={home.grid}>
                 {posts.map((post) => (
-                    <article key={post.id}>
+                    <article className={home.card} key={post.id}>
                         <Link href="/posts/[id]" as={`/posts/${post.id}`}>
                             <a>
                                 <h1>{post.title}</h1>

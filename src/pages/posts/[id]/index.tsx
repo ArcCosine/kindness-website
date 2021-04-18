@@ -2,6 +2,8 @@ import Head from 'next/head'
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from "next";
 import { getPostData, getAllPostIds, Post } from "@/lib/posts";
 
+import home from '../../../styles/Home.module.css'
+
 export const getStaticPaths: GetStaticPaths = async () => {
     const ids = getAllPostIds();
     return {
@@ -27,8 +29,7 @@ const PostPage = ({
                 <meta name="og:title" content={`${title} - Kindness web site`} />
                 <title>{title} - Kindness web site</title>
             </Head>
-            <h1>{title}</h1>
-            <div dangerouslySetInnerHTML={{ __html: content }} />
+            <div className="home.grid" dangerouslySetInnerHTML={{ __html: content }} />
         </>
     );
 };
