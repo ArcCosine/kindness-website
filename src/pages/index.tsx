@@ -1,10 +1,13 @@
 import { InferGetStaticPropsType, GetStaticProps } from "next";
 import Link from "next/link";
-import Head from "next/head";
 import { getSortedPostsData } from "@/lib/posts";
 
-import styles from "./index.module.css";
-import home from '../../styles/Home.module.css'
+
+import Meta from "@/components/Meta"
+import Footer from "@/components/Footer"
+
+import styles from "@/styles/index.module.css";
+import home from '@/styles/Home.module.css'
 
 export const getStaticProps: GetStaticProps<{
     posts: ReturnType<typeof getSortedPostsData>
@@ -15,10 +18,7 @@ export const getStaticProps: GetStaticProps<{
 const Index = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => {
     return (
         <>
-            <Head>
-                <meta name="og:title" content={`Kindness web site`} />
-                <title>Kindness web site</title>
-            </Head>
+            <Meta />
 
             <h1 className={styles.heading}>Kindness</h1>
             <div className={home.grid}>
@@ -32,6 +32,7 @@ const Index = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => {
                     </article>
                 ))}
             </div>
+            <Footer />
         </>
     );
 };
