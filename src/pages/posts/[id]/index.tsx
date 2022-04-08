@@ -5,8 +5,6 @@ import { getPostData, getAllPostIds, Post } from "@/lib/posts";
 import Meta from '@/components/Meta'
 import Footer from '@/components/Footer'
 
-import Home from '@/styles/Home.module.css'
-
 
 export const getStaticPaths: GetStaticPaths = async () => {
     const ids = getAllPostIds();
@@ -30,7 +28,7 @@ const PostPage = ({
     return (
         <>
             <Meta title={title} />
-            <div className="Home.grid" dangerouslySetInnerHTML={{ __html: content }} />
+            <div className="mx-auto" dangerouslySetInnerHTML={{ __html: content }} />
             <Footer />
         </>
     );

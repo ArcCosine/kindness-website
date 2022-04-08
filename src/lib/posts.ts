@@ -50,6 +50,7 @@ export function getAllPostIds() {
     return Array.from(ID_FILENAME_MAP.keys());
 }
 
+
 export async function getPostData(id: string): Promise<Post> {
     const post = ALL_POSTS.find((post) => id === post.id) as Post;
 
