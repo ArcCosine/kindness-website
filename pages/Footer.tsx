@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import Link from 'next/link'
 
-const Footer:NextPage<Props> = ()=>{
+const Footer:NextPage = ()=>{
     return (
         <footer className="container mx-auto pb-8">
             <Link href="/">

@@ -26,8 +26,7 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async ({ params }: any) => {
-  const post = getPostBySlug(params.slug, ["slug", "title", "date", "content"]);
-  console.log(post);
+  const post = getPostBySlug(params.slug, ["slug", "title", "published", "content","date"]);
   // Markdown を HTML に変換する
   const content = await markdownToHtml(post.content);
   // content を詰め直して返す
@@ -61,7 +60,7 @@ const Post: NextPage<Props> = ({ post }) => {
               <article className="m-8">
                   <div className="grid">
                       <div className={postStyle.post}>
-                          <p>{post.date}</p>
+                          <p>{post.date} published.</p>
                           <div dangerouslySetInnerHTML={{ __html: post.content }} />
                       </div>
                   </div>
