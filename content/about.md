@@ -62,4 +62,5 @@ I'm not currently accepting work, sorry.
 
 # Products, etc.
 
-[GitHub](https://github.com/Arccosine/)
+Visit my [GitHub](https://github.com/Arccosine/).
+

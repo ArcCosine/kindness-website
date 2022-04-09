@@ -1,0 +1,26 @@
+.post {
+}
+
+.post h1 {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+.post p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.post ul {
+  list-style-type: none;
+  margin-bottom: 2rem;
+}
+
+.post ul li {
+  font-size: 1.4rem;
+  margin-left: 2rem;
+}
+
+.post a {
+  color: #0000ff;
+}

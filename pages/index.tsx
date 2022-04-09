@@ -13,7 +13,7 @@ export const getStaticProps = async () => {
 
 const Home: NextPage = ({ allPosts }) => {
     return (
-        <div className="container m-8">
+        <div className="container mx-auto">
             <Head>
                 <title>Kindness Home</title>
                 <meta
@@ -23,17 +23,17 @@ const Home: NextPage = ({ allPosts }) => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <main className="container">
-                <h1 className="text-5xl font-bold">Kindness</h1>
-                <div className="grid grid-cols-4">
+            <main className="container mt-8">
+                <h1 className="text-center text-5xl font-bold mb-8">Kindness</h1>
+                <div className="grid md:grid-cols-1 lg:grid-cols-2">
                     {allPosts.map((post) => (
-                        <a href={post.slug} className="" key={post.slug}>
-                            <h2>{post.title}</h2>
-                            <p>{post.date}</p>
+                        <a href={post.slug} className="rounded-md border-solid border-2 border-blue-600 p-8 m-4" key={post.slug}>
+                            <h2 className="text-3xl text-blue-600/100">{post.title}</h2>
                         </a>
                     ))}
                 </div>
             </main>
+            <footer className="text-center">&copy; 2008-2022 Kindness,inc.</footer>
         </div>
     );
 };

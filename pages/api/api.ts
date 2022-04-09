@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import * as dayjs from "dayjs";
 
 type Post = {
   slug: string;
@@ -16,9 +17,8 @@ const postsDirectory = path.join(process.cwd(), "content");
  */
 export function getPostSlugs() {
   const allDirents = fs.readdirSync(postsDirectory, { withFileTypes: true });
-
   return allDirents
-    .filter((dirent) => !dirent.isDirectory())
+    .filter((dirent) => dirent.isFile())
     .map(({ name }) => name);
 }
 
@@ -26,7 +26,7 @@ export function getPostSlugs() {
  * 指定したフィールド名から、記事のフィールドの値を取得する
  */
 export function getPostBySlug(slug: string, fields: string[] = []) {
-  const fullPath = path.join(postsDirectory, slug, "index.md");
+  const fullPath = path.join(postsDirectory, slug);
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
 
@@ -44,9 +44,13 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
     if (field === "content") {
       items[field] = content;
     }
-    if (field === "title" || field === "date") {
+    if (field === "title" )  {
       items[field] = data[field];
     }
+    if (field === "published" )  {
+      items[field] = dayjs(data[field]).toDate();
+    }
+
   });
   return items;
 }
@@ -58,7 +62,7 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
 export function getAllPosts(fields: string[] = []) {
   const slugs = getPostSlugs();
   const posts = slugs
-    .map((slug) > getPostBySlug(slug, fields))
+    .map((slug) => getPostBySlug(slug, fields))
     .sort((a, b) => (a.date > b.date ? -1 : 1));
   return posts;
 }
