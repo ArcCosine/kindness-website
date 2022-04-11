@@ -90,7 +90,7 @@ No matter which programming language you work with, everything is handled in Vim
 
 
 I can handle any terminal environment myself, but the one I have been working with the longest is probably the [command prompt](https://docs.microsoft.com/ja-jp/windows-server/administration/windows-commands/windows-commands):).
-I have recently started using Hyper on Mac OS.
+I have recently started using [Hyper](https://hyper.is/) on Mac OS.
 
 
 # Products, etc.
