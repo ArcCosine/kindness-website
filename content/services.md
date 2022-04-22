@@ -1,7 +1,7 @@
 ---
 id: 'services'
 title: 'Services'
-published: '2022-04-11'
+published: '2022-04-22'
 ---
 
 # Services
@@ -23,3 +23,10 @@ Various pages are automatically converted from markdown files to HTML.
 [ごちうサイクル - ご注文はサイクルですか？ -](https://arccosine.github.io/go-chi-u-cycle/) is a website completely made up of stories.
 You can just turn the cute icons. It is also in 3D.
 
+
+# 総人口推移グラフ
+
+[総人口推移グラフ](https://arccosine.github.io/total-population-graph/) was construct as a sample response to a [フロントエンドコーディング試験](https://notion.yumemi.co.jp/0e9ef27b55704d7882aab55cc86c999d).
+It was to gauge how quickly I could build it with my current abilities.
+The base part took 3 hours to complete and Ver 1 took about 7 hours.
+Including refactoring, etc, it would be completed in a week with one hand on the job, as per the immediate goal.
