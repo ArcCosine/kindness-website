@@ -61,7 +61,7 @@ const Post: NextPage<Props> = ({ post }) => {
                 <article className="m-8">
                     <div className="grid">
                         <div className={postStyle.post}>
-                            <p>{post.date} published.</p>
+                            <p>{post.published} published.</p>
                             <div
                                 dangerouslySetInnerHTML={{
                                     __html: post.content,

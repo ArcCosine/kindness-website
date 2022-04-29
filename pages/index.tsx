@@ -7,7 +7,7 @@ import { getAllPosts } from "./api/markdown";
 type Props = InferGetStaticPropsType<typeof getStaticProps>;
 
 export const getStaticProps = async () => {
-    const allPosts = getAllPosts(["slug", "title", "date"]);
+    const allPosts = getAllPosts(["slug", "title", "published"]);
     return {
         props: { allPosts },
     };
@@ -28,7 +28,7 @@ const Home: NextPage<Props> = ({ allPosts }) => {
                                 <h2 className="text-3xl text-blue-600/100">
                                     {post.title}
                                 </h2>
-                                <span>{post.date} published.</span>
+                                <span>{post.published} published.</span>
                             </a>
                         </Link>
                     ))}

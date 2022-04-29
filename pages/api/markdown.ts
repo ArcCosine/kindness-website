@@ -7,8 +7,8 @@ type Post = {
     slug: string;
     content: string;
     title: string;
-    date: string;
-    published: number;
+    date: number;
+    published: string;
 };
 
 const postsDirectory = path.join(process.cwd(), "content");
@@ -33,30 +33,12 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
     const { data, content } = matter(fileContents);
 
     const items: Post = {
-        slug: "",
-        content: "",
-        title: "",
-        date: "",
-        published: +dayjs().valueOf(),
+        slug: slug.replace(".md",""),
+        content: content,
+        title: data.title,
+        published: data.published,
+        date: +dayjs(data["published"]).toDate().getTime(),
     };
-
-    fields.forEach((field) => {
-        if (field === "slug") {
-            items[field] = slug.replace(".md", "");
-        }
-        if (field === "content") {
-            items[field] = content;
-        }
-        if (field === "title") {
-            items[field] = data[field];
-        }
-        if (field === "published") {
-            items[field] = +dayjs(data[field]).valueOf();
-        }
-        if (field === "date") {
-            items[field] = data["published"];
-        }
-    });
     return items;
 }
 
@@ -69,5 +51,6 @@ export function getAllPosts(fields: string[] = []) {
     const posts = slugs
         .map((slug) => getPostBySlug(slug, fields))
         .sort((a, b) => (a.published > b.published ? -1 : 1));
+
     return posts;
 }
