@@ -25,9 +25,9 @@ const Home: NextPage<Props> = ({ allPosts }) => {
                     {allPosts?.map((post) => (
                         <Link href={post.slug} key={post.slug}>
                             <a className="rounded-md border-solid border-2 border-blue-600 p-8 m-4">
-                                <h2 className="text-3xl text-blue-600/100">
+                                <span className="block text-3xl text-blue-600/100">
                                     {post.title}
-                                </h2>
+                                </span>
                                 <span>{post.published} published.</span>
                             </a>
                         </Link>
@@ -35,7 +35,8 @@ const Home: NextPage<Props> = ({ allPosts }) => {
                 </div>
             </main>
             <footer className="text-center">
-                &copy; 2008-2022 Kindness,inc.
+                <div>&copy; 2008-2022 Kindness,inc.</div>
+                <div>Favicon <a target="_blank" rel="noopener noreferrer" href="https://icons8.com/icon/66852/円k">円K</a> icon by <a target="_blank" rel="noopener noreferrer" href="https://icons8.com">Icons8</a></div>
             </footer>
         </div>
     );
