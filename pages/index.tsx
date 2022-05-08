@@ -21,6 +21,11 @@ const Home: NextPage<Props> = ({ allPosts }) => {
                 <h1 className="text-center text-5xl font-bold mb-8">
                     Kindness
                 </h1>
+                <p className="m-8 text-2xl">
+                    Kindness is a team of individual developers whose goal is to continue to change the world through programming.<br />
+                    Create robust and fast programs in a short period of time.<br />
+                    I also undertake the creation of easy-to-read documents.
+                </p>
                 <div className="grid md:grid-cols-1 lg:grid-cols-2">
                     {allPosts?.map((post) => (
                         <Link href={post.slug} key={post.slug}>
@@ -36,7 +41,24 @@ const Home: NextPage<Props> = ({ allPosts }) => {
             </main>
             <footer className="text-center">
                 <div>&copy; 2008-2022 Kindness,inc.</div>
-                <div>Favicon <a target="_blank" rel="noopener noreferrer" href="https://icons8.com/icon/66852/円k">円K</a> icon by <a target="_blank" rel="noopener noreferrer" href="https://icons8.com">Icons8</a></div>
+                <div>
+                    Favicon{" "}
+                    <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://icons8.com/icon/66852/円k"
+                    >
+                        円K
+                    </a>{" "}
+                    icon by{" "}
+                    <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://icons8.com"
+                    >
+                        Icons8
+                    </a>
+                </div>
             </footer>
         </div>
     );
