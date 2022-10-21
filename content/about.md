@@ -1,7 +1,7 @@
 ---
 id: 'about'
 title: 'About Me'
-published: '2022-04-09'
+published: '2022-10-21'
 ---
 
 # About Me
@@ -50,7 +50,7 @@ Although not mentioned here, I have also designed a database called informix.
 
 # OS
 
-As for operating systems, we have listed the operating systems that we have performed from setup to environment construction. I am able to perform basic operations and create shells for the *nix OS family.
+As for operating systems, we have listed the operating systems that we have performed from setup to environment construction. I am able to perform basic operations and create shells for the Linux OS family.
 It is almost never used now, but as for MS-DOS, I have been using it since MS-DOS3.3C :).
 
 - Windows
@@ -85,16 +85,19 @@ I have been doing a lot of React-based development lately.
 
 I love the Vim!
 No matter which programming language you work with, everything is handled in Vim.
+But recently, I have begun to make use of NeoVim.
+My possibilities are still endless:)
+
 
 # Terminal
 
 
 I can handle any terminal environment myself, but the one I have been working with the longest is probably the [command prompt](https://docs.microsoft.com/ja-jp/windows-server/administration/windows-commands/windows-commands):).
 I have recently started using [Kitty](https://sw.kovidgoyal.net/kitty/) on Mac OS.
+Just recently, I have become interested in [wezterm](https://github.com/wez/wezterm).
 
 
 # Products, etc.
 
 Visit my [GitHub](https://github.com/Arccosine/).
 You can see the products developed by our hobbyists.
-
