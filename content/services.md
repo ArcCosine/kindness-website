@@ -1,13 +1,12 @@
 ---
-id: 'services'
-title: 'Services'
-published: '2022-04-22'
+id: "services"
+title: "Services"
+published: "2022-04-22"
 ---
 
 # Services
 
 This service was developed as a hobby.
-
 
 # nyaan
 
@@ -22,7 +21,6 @@ Various pages are automatically converted from markdown files to HTML.
 
 [ごちうサイクル - ご注文はサイクルですか？ -](https://arccosine.github.io/go-chi-u-cycle/) is a website completely made up of stories.
 You can just turn the cute icons. It is also in 3D.
-
 
 # 総人口推移グラフ
 
