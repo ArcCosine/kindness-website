@@ -9,10 +9,6 @@ const postsDirectory = join(process.cwd(), "content");
  */
 export function getPostSlugs() {
     return fs.readdirSync(postsDirectory);
-    //const allDirents = fs.readdirSync(postsDirectory, { withFileTypes: true });
-    //return allDirents
-    //    .filter((dirent) => dirent.isFile())
-    //    .map(({ name }) => name);
 }
 
 /**

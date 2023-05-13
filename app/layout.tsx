@@ -1,4 +1,7 @@
-import './globals.css';
+import "./globals.css";
+
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export default function RootLayout({
     // Layouts must accept a children prop.
@@ -9,7 +12,13 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body className="min-h-screen">{children}</body>
+            <body className="min-h-screen w-full p-0">
+                <main className="p-0 mt-8 flex flex-col min-h-screen w-full md:max-w-5xl mx-auto">
+                    <Header></Header>
+                    {children}
+                    <Footer></Footer>
+                </main>
+            </body>
         </html>
     );
 }
