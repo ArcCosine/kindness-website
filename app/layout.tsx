@@ -12,6 +12,9 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
+            <head>
+            <link rel="manifest" href="/manifest.webmanifest" />
+            </head>
             <body className="min-h-screen w-full p-0">
                 <main className="p-0 mt-8 flex flex-col min-h-screen w-full md:max-w-5xl mx-auto">
                     <Header></Header>
