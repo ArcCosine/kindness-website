@@ -1,12 +1,13 @@
 ---
 id: "contact"
 title: "Contact"
-published: "2023-05-12"
+published: "2024-06-03"
 ---
 
 # Contact
 
-You can reach me via [email](mailto:arc@tunsns.net) or [Vivaldi Social](https://social.vivaldi.net/@ArcCosine).
-Currently I am not accepting new work.
+**Currently I'm not accepting new jobs.**
+Contact is not possible.
 
-If you are requesting work from me, a Vivaldi Social's DM may be more responsive than an email!
+It is very likely that I did not receive the email you sent, which is generally a case of gmail's spam filter working wisely.
+So if I did not notice your email, I am very sorry.
