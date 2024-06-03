@@ -1,7 +1,7 @@
 ---
 id: "about"
 title: "About Me"
-published: "2023-05-12"
+published: "2024-06-03"
 ---
 
 # About Me
@@ -11,7 +11,8 @@ published: "2023-05-12"
 
 I am expert in JavaScript.
 I'm especially good at front-end stuff.
-I'm not currently accepting work, sorry.
+
+**I'm not currently accepting work, sorry.**
 
 As for recent developments, here's [a blog](https://looxu.blogspot.com/) post about it.\(mostly in Japanese.\)
 
@@ -76,7 +77,7 @@ I have been doing a lot of React-based development lately.
 
 # Editor
 
-I love the Vim!
+I love the **Vim**!
 No matter which programming language you work with, everything is handled in Vim.
 But recently, I have begun to make use of [NeoVim](https://neovim.io).
 My possibilities are still endless:)
