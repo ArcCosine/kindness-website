@@ -1,5 +1,5 @@
-import { getAllPosts } from "../lib/markdown";
-import Card from "../components/Card";
+import { getAllPosts } from "@/lib/markdown";
+import Card from "@/components/Card";
 
 export const metadata = {
     title: "Kindness Home",

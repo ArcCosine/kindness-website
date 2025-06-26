@@ -1,7 +1,18 @@
 import "./globals.css";
 
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Kindness Home',
+    description: 'Kindness page.',
+    icons: {
+        icon: '/favicon.png',
+        apple: '/android-chrome-192x192.png',
+    },
+    manifest: '/manifest.webmanifest',
+};
 
 export default function RootLayout({
     // Layouts must accept a children prop.
@@ -12,9 +23,6 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <head>
-            <link rel="manifest" href="/manifest.webmanifest" />
-            </head>
             <body className="min-h-screen w-full p-0">
                 <main className="p-0 mt-8 flex flex-col min-h-screen w-full md:max-w-5xl mx-auto">
                     <Header></Header>

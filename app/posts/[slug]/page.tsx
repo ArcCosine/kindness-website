@@ -1,18 +1,21 @@
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 
-import { getPostBySlug } from "../../../lib/markdown";
-import markdownToHtml from "../../../lib/markdownToHtml";
-import postStyle from "../../../styles/Post.module.css";
+import { getPostBySlug } from "@/lib/markdown";
+import markdownToHtml from "@/lib/markdownToHtml";
+import postStyle from "@/styles/Post.module.css";
 
 interface Props {
-    params: { slug: string };
+    params: Promise<{ slug: string }>;
 }
 
 export async function generateMetadata(props: Props): Promise<Metadata> {
-    const { params } = props;
+    const { slug } = await props.params;
+    if (!slug) {
+        return notFound();
+    }
     try {
-        const post = getPostBySlug(params.slug, ["title"]);
+        const post = getPostBySlug(slug, ["title"]);
         return {
             title: post.title,
         };
@@ -23,10 +26,12 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
 }
 
 export default async function Post(props: Props) {
-    const { params } = props;
-
+    const { slug } = await props.params;
+    if (!slug) {
+        return notFound();
+    }
     try {
-        const post = getPostBySlug(params.slug, [
+        const post = getPostBySlug(slug, [
             "slug",
             "title",
             "published",
