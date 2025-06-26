@@ -1,16 +1,12 @@
 ---
 id: "services"
 title: "Services"
-published: "2023-05-13"
+published: "2025-06-27"
 ---
 
 # Services
 
 This service was developed as a hobby.
-
-# nyaan
-
-[nyaan](https://nyaan.work) is a service that allows you to easily post cat meows to Twitter. It is built entirely in Pure JavaScript and is a study of the recent PWAs. It utilizes netlify's functionality to dynamically generate Twitter cards.
 
 # Kindness-webpage
 
