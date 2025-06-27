@@ -2,16 +2,16 @@ import "./globals.css";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Metadata } from 'next';
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: 'Kindness Home',
-    description: 'Kindness page.',
+    title: "Kindness Home",
+    description: "Kindness page.",
     icons: {
-        icon: '/favicon.png',
-        apple: '/android-chrome-192x192.png',
+        icon: "/favicon.png",
+        apple: "/android-chrome-256x256.png",
     },
-    manifest: '/manifest.webmanifest',
+    manifest: "/manifest.webmanifest",
 };
 
 export default function RootLayout({

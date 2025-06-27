@@ -4,13 +4,9 @@ title: "Privacy Policy"
 published: "2025-06-27"
 ---
 
----
-
 # Privacy Policy
 
 This Privacy Policy outlines how our website collects, uses, shares, and protects your information. We're committed to respecting the privacy of our visitors and users, and we comply with Japan's Act on the Protection of Personal Information and related laws and regulations.
-
----
 
 ## 1. Information We Collect and How We Use It
 
@@ -40,9 +36,7 @@ When you contact us with inquiries or requests through our website, we may colle
 -   **Email Address**
 -   **Phone Number**
 
-The collection and use of this personal information are based on your **consent** or the **performance of a contract** (e.g., responding to your inquiry).
-
----
+The collection and use of this personal information are based on your **consent** or the **performance of a contract** [me](https://social.vivaldi.net/@ArcCosine).
 
 ## 2. Information Sharing
 
@@ -54,13 +48,9 @@ However, we may share information in compliance with relevant laws and regulatio
 -   When there's a legal request from public institutions such as courts or the police.
 -   When it's necessary to protect the life, body, property, or other rights and interests of the user or a third party, and obtaining your consent is difficult.
 
----
-
 ## 3. Personal Information Retention Period
 
 We retain the personal information we collect only for the period necessary to fulfill the purposes for which it was collected. For example, information related to inquiries will generally be retained for **6 months** after the inquiry is resolved, after which it will be appropriately deleted or anonymized. If there's a separate legal provision, we'll comply with that provision.
-
----
 
 ## 4. External Services
 
@@ -68,13 +58,9 @@ Our website uses **Vercel** for website hosting and delivery. Vercel may process
 
 We also use **Google Analytics** to analyze website usage and improve our services. Google Analytics may collect your information using cookies, but we don't intend for these services to collect personally identifiable information. For information on how Google Analytics collects and processes data, please refer to Google's Policies & Terms page ([https://policies.google.com/technologies/partner-sites](https://policies.google.com/technologies/partner-sites)).
 
----
-
 ## 5. Personal Information Security Measures
 
 We implement appropriate technical and organizational security measures to prevent the loss, destruction, alteration, leakage, or unauthorized access to the personal information entrusted to us.
-
----
 
 ## 6. Your Rights
 
@@ -87,20 +73,14 @@ You have the following rights regarding your personal information. To exercise t
 -   **Right to Data Portability**: The right to receive your provided personal data in a structured, commonly used format and to transmit it to another controller.
 -   **Right to Object**: The right to object to the processing of your personal information under certain conditions.
 
----
-
 ## 7. Changes to This Privacy Policy
 
 We may revise this Privacy Policy due to changes in laws, changes in our website services, or for other reasons. We'll notify you of any significant changes through appropriate methods, such as announcements on our website.
-
----
 
 ## 8. Contact Information
 
 If you have any questions about this Privacy Policy or requests regarding your personal information, please contact us at:
 
-[ArcCosine](https://social.vivaldi.net/@ArcCosine)
-
----
+[ArcCosine(via:vivalid.net)](https://social.vivaldi.net/@ArcCosine)
 
 **Last Updated: June 27, 2025**
