@@ -6,17 +6,17 @@ published: "2025-06-27"
 
 ---
 
-## Privacy Policy
+# Privacy Policy
 
 This Privacy Policy outlines how our website collects, uses, shares, and protects your information. We're committed to respecting the privacy of our visitors and users, and we comply with Japan's Act on the Protection of Personal Information and related laws and regulations.
 
 ---
 
-### 1. Information We Collect and How We Use It
+## 1. Information We Collect and How We Use It
 
 We collect the following information to provide services and enhance your experience on our website.
 
-#### 1.1 Information Collected Automatically
+### 1.1 Information Collected Automatically
 
 When you access our site, the following information is automatically collected. This data is used for **traffic analysis**, understanding website operation, and discerning user behavior and trends. **It is not used to personally identify individuals.**
 
@@ -26,13 +26,13 @@ When you access our site, the following information is automatically collected. 
 -   **Pageviews**: Information about the pages you viewed within our site.
 -   **Date and Time of Visit**: The date and time you accessed our site.
 
-#### 1.2 About Cookies
+### 1.2 About Cookies
 
 Our website may use **cookies** to collect information. Cookies are small text files stored on your computer that allow us to recognize you when you revisit our site. They help us remember your preferences and past activities to provide a more personalized user experience.
 
 **You can disable cookies through your browser settings.** However, please note that disabling cookies may limit some features of our site.
 
-#### 1.3 Information You Provide
+### 1.3 Information You Provide
 
 When you contact us with inquiries or requests through our website, we may collect the following personal information. This information is used **solely to respond to your inquiries or fulfill your requests and will not be used for any other purpose.**
 
@@ -44,7 +44,7 @@ The collection and use of this personal information are based on your **consent*
 
 ---
 
-### 2. Information Sharing
+## 2. Information Sharing
 
 We **do not provide your personal information to third parties.**
 
@@ -56,13 +56,13 @@ However, we may share information in compliance with relevant laws and regulatio
 
 ---
 
-### 3. Personal Information Retention Period
+## 3. Personal Information Retention Period
 
 We retain the personal information we collect only for the period necessary to fulfill the purposes for which it was collected. For example, information related to inquiries will generally be retained for **6 months** after the inquiry is resolved, after which it will be appropriately deleted or anonymized. If there's a separate legal provision, we'll comply with that provision.
 
 ---
 
-### 4. External Services
+## 4. External Services
 
 Our website uses **Vercel** for website hosting and delivery. Vercel may process information such as your IP address to provide site performance and availability. For more details on Vercel's privacy practices, please refer to Vercel's Privacy Policy ([https://vercel.com/legal/privacy](https://vercel.com/legal/privacy)).
 
@@ -70,13 +70,13 @@ We also use **Google Analytics** to analyze website usage and improve our servic
 
 ---
 
-### 5. Personal Information Security Measures
+## 5. Personal Information Security Measures
 
 We implement appropriate technical and organizational security measures to prevent the loss, destruction, alteration, leakage, or unauthorized access to the personal information entrusted to us.
 
 ---
 
-### 6. Your Rights
+## 6. Your Rights
 
 You have the following rights regarding your personal information. To exercise these rights, please contact us at the "Contact Information" provided below.
 
@@ -89,17 +89,17 @@ You have the following rights regarding your personal information. To exercise t
 
 ---
 
-### 7. Changes to This Privacy Policy
+## 7. Changes to This Privacy Policy
 
 We may revise this Privacy Policy due to changes in laws, changes in our website services, or for other reasons. We'll notify you of any significant changes through appropriate methods, such as announcements on our website.
 
 ---
 
-### 8. Contact Information
+## 8. Contact Information
 
 If you have any questions about this Privacy Policy or requests regarding your personal information, please contact us at:
 
-[Insert specific contact information here, e.g., email address, link to contact form]
+[ArcCosine](https://social.vivaldi.net/@ArcCosine)
 
 ---
 
