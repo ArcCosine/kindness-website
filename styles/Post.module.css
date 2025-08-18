@@ -37,3 +37,8 @@
 .post a {
     color: #0000ff;
 }
+
+.post a img {
+    display: inline;
+    width: 20px;
+}

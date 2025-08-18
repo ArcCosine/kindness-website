@@ -1,7 +1,7 @@
 ---
 id: "about"
 title: "About Me"
-published: "2024-06-03"
+published: "2025-08-19"
 ---
 
 # About Me
@@ -89,5 +89,5 @@ Just recently, I have become interested in [wezterm](https://github.com/wez/wezt
 
 # Products, etc.
 
-Visit my [GitHub](https://github.com/Arccosine/).
+Visit my [GitHub ![GitHub](/github-mark.png)](https://github.com/ArcCosine/).
 You can see the products developed by our hobbyists.
